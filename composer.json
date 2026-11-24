@@ -1,0 +1,20 @@
+{
+    "name": "cristian/inventario-php",
+    "description": "Sistema de inventario en PHP 8 (MVC propio, PDO/SQLite, autenticación, CRUD, CSV)",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.2",
+        "ext-pdo": "*",
+        "ext-pdo_sqlite": "*"
+    },
+    "autoload": {
+        "psr-4": { "App\\": "app/" }
+    },
+    "scripts": {
+        "serve": [
+            "Composer\\Config::disableProcessTimeout",
+            "php -S localhost:8000 -t public"
+        ]
+    }
+}
